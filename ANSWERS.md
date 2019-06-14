@@ -7,7 +7,9 @@ A zombie process is a child process that terminates, but has not been waited for
 
 
 **3. How does a zombie process get created? How does one get destroyed?**
+When being created it uses the fork() system call. Address state of the parent process is replicated.
 
+When being destroyed, wait() system call is called and the parent is executed and suspended until th child is terminated. 
 
 
 **4. What are some of the benefits of working in a compiled language versus a non-compiled language? More specifically, what benefits are there to be had from taking the extra time to compile our code?**
