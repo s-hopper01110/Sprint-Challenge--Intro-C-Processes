@@ -3,7 +3,7 @@
 
 
 **2. What is a zombie process?**
-
+A zombie process is a child process that terminates, but has not been waited for by the parent.
 
 
 **3. How does a zombie process get created? How does one get destroyed?**
